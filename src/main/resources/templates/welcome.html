@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body { background-color: #f4f6f9; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; margin: 0; }
+        .card { background-color: #1e1e38; color: white; padding: 50px; border-radius: 10px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); width: 250px; }
+        h1 { color: #b19cd9; margin-top: 0; }
+        a { color: #808080; text-decoration: none; font-size: 14px; display: block; margin-top: 20px; }
+    </style>
+</head>
 <body>
-    <h1>Hello, <span th:text="${name}">User</span>!</h1>
-    <a href="/">Go Back</a>
+    <div class="card">
+        <h1>Hello, <span th:text="${name}">User</span>!</h1>
+        <a href="/">Go Back</a>
+    </div>
 </body>
 </html>

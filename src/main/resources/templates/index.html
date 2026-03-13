@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <style>
+        body { background-color: #f4f6f9; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: sans-serif; margin: 0; }
+        .card { background-color: #1e1e38; color: white; padding: 40px; border-radius: 10px; text-align: center; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        h2 { color: #b19cd9; margin-top: 0; }
+        input { padding: 10px; margin: 15px 0; border-radius: 5px; border: none; width: 90%; background: #2a2a4a; color: white; }
+        button { background-color: #6c5ce7; color: white; padding: 10px; width: 95%; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
 <body>
-    <h2>Welcome</h2>
-    <p>Please enter your name to receive a greeting.</p>
-    <form action="/greet" method="post">
-        <input type="text" name="userName" placeholder="Enter your name" required>
-        <button type="submit">Get Greeting</button>
-    </form>
+    <div class="card">
+        <h2>Welcome</h2>
+        <p style="color: #a0a0a0; font-size: 14px;">Please enter your name to receive a greeting.</p>
+        <form action="/greet" method="post">
+            <input type="text" name="userName" placeholder="Enter your name" required>
+            <button type="submit">Get Greeting</button>
+        </form>
+    </div>
 </body>
 </html>
