@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <h2>Welcome</h2>
+    <p>Please enter your name to receive a greeting.</p>
+    <form action="/greet" method="post">
+        <input type="text" name="userName" placeholder="Enter your name" required>
+        <button type="submit">Get Greeting</button>
+    </form>
+</body>
+</html>
